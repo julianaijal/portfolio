@@ -1,18 +1,19 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Posts = () => (
   <>
   <h3>Posts</h3>
     <ul>
       <li>
-      <a href="/posts/post-one" className="card">
-        <h3>Post one</h3>
-      </a>
+      <Link href="/posts/post-one" className="card">
+        <a>Post one</a>
+      </Link>
       </li>
       <li>
-      <a href="/posts/post-two" className="card">
-        <h3>Post two</h3>
-      </a>
+      <Link href="/posts/post-two" className="card">
+        <a>Post two</a>
+      </Link>
       </li>
     </ul>
   </>
