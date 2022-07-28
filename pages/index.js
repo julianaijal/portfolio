@@ -1,5 +1,22 @@
 import Head from 'next/head'
 
+const Posts = () => (
+  <>
+  <h3>Posts</h3>
+    <ul>
+      <li>
+      <a href="/posts/post-one" className="card">
+        <h3>Post one</h3>
+      </a>
+      </li>
+      <li>
+      <a href="/posts/post-two" className="card">
+        <h3>Post two</h3>
+      </a>
+      </li>
+    </ul>
+  </>
+); 
 export default function Home() {
   return (
     <div className="container">
@@ -23,6 +40,8 @@ export default function Home() {
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
+          <Posts/>
+          
           <a href="https://nextjs.org/learn" className="card">
             <h3>Learn &rarr;</h3>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
