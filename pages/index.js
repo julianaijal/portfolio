@@ -10,11 +10,6 @@ const Posts = () => (
         <a>Post one</a>
       </Link>
       </li>
-      <li>
-      <Link href="/posts/post-two" className="card">
-        <a>Post two</a>
-      </Link>
-      </li>
     </ul>
   </>
 ); 
