@@ -8,13 +8,13 @@ export default function Post() {
       <Head>
         <title>Post One</title>
       </Head>
-      <Script
+      {/* <Script
         src="https://connect.facebook.net/en_US/sdk.js"
         strategy="lazyOnload"
         onLoad={() =>
           console.log(`FB script loaded`)
         }
-      />
+      /> */}
       <h1>Post one</h1>
       <Link href='/'>
           <a>{'<'} Back</a>
