@@ -1,24 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import styled from "styled-components"
-
-const Title = styled.h1`
-  color: #F90B6D;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 34px;font-weight: 300;
-  line-height: 40px;
-  margin: 0 0 16px;
-`;
+import { StyledContainer, StyledHeader, StyledBackToHome } from './layout-styles.js'
 
 const name = 'Julian Aijal';
 export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <StyledContainer>
       <Head>
         <link rel="icon" href="...jpg" />
         <meta
@@ -34,7 +25,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <StyledHeader>
         {home ? (
           <>
             <Image
@@ -45,7 +36,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <Title>{name}</Title>
+            <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
@@ -68,15 +59,15 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-      </header>
+      </StyledHeader>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <StyledBackToHome>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
-        </div>
+        </StyledBackToHome>
       )}
-    </div>
+    </StyledContainer>
   );
 }
