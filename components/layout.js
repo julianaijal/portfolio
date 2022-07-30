@@ -2,14 +2,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import { StyledContainer, StyledHeader, StyledBackToHome } from './layout-styles.js'
+import { Wrapper, Header, HomeButton } from './layout-styles.js'
 
 const name = 'Julian Aijal';
 export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home }) {
   return (
-    <StyledContainer>
+    <Wrapper>
       <Head>
         <link rel="icon" href="...jpg" />
         <meta
@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <StyledHeader>
+      <Header>
         {home ? (
           <>
             <Image
@@ -59,15 +59,15 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-      </StyledHeader>
+      </Header>
       <main>{children}</main>
       {!home && (
-        <StyledBackToHome>
+        <HomeButton>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
-        </StyledBackToHome>
+        </HomeButton>
       )}
-    </StyledContainer>
+    </Wrapper>
   );
 }
