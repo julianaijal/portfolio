@@ -3,7 +3,15 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-// import styled from "styled-components"
+import styled from "styled-components"
+
+const Title = styled.h1`
+  color: #F90B6D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;font-weight: 300;
+  line-height: 40px;
+  margin: 0 0 16px;
+`;
 
 const name = 'Julian Aijal';
 export const siteTitle = 'Next.js Sample Website';
@@ -37,7 +45,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Title>{name}</Title>
           </>
         ) : (
           <>
