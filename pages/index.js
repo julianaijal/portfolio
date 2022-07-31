@@ -10,7 +10,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
+        <p className='text-center'>
           (This is a sample website on{' '}
           <a href="https://nextjs.org/learn">Next.js</a>.)
         </p>
