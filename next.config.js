@@ -5,6 +5,7 @@
         images: {
           domains: [
             'julianaijal.com',
+            'www.julianaijal.com',
         ],
         },    
   }
