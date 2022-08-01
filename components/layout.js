@@ -1,8 +1,8 @@
 // https://portfolio-flax-three-97.vercel.app
 import Head from 'next/head';
 import Image from 'next/image';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import utilStyles from '../styles/utils.module.css';
 import { Wrapper, Header, HomeButton } from './layout-styles.js';
 import { TagmanagerFunction, TagmanagerIframe } from './analytics';
 
@@ -18,7 +18,7 @@ export default function Layout({ children, home }) {
           name="description"
           content="Learn how to build a personal website using Next.js"
         />
-        <meta name="robots" content="noindex"></meta>
+        <meta name="robots" content="noindex" />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <TagmanagerFunction/>
+        <TagmanagerFunction />
       </Head>
       <TagmanagerIframe />
       <Header>
