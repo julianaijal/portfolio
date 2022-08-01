@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/../public/images/elmo-fire.gif"
+              // src="/../public/images/elmo-fire.gif"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -46,7 +46,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/../public/images/elmo-fire.gif"
+                  // src="/../public/images/elmo-fire.gif"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
