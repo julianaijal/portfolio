@@ -3,7 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import { Wrapper, Header, HomeButton } from './layout-styles.js'
+import { Wrapper, Header, HomeButton } from './layout-styles.js';
+import { TagmanagerFunction, TagmanagerIframe } from './analytics';
 
 const name = 'Julian Aijal';
 export const siteTitle = 'Next.js Sample Website';
@@ -26,21 +27,9 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-M8PS5F6');`,
-            }}
-        />
+        <TagmanagerFunction/>
       </Head>
-      <noscript
-        dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8PS5F6" height="0" width="0" style="display: none; visibility: hidden;" />`,
-        }}
-      />
+      <TagmanagerIframe />
       <Header>
         {home ? (
           <>
