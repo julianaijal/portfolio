@@ -19,11 +19,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className="text-center">
-          (This is a sample website on
-          {' '}
-          <a href="https://nextjs.org/learn">Next.js</a>
-          .)
+        <p className='text-center'>
+          (This is a sample website on{' '}
+          <a href="https://nextjs.org/learn">Next.js</a>.)
         </p>
       </section>
     </Layout>

@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Script from 'next/script';
-import Link from 'next/link';
 import Layout from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
+import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts';
+import Link from 'next/link';
 import Date from '../components/date';
 
 export async function getStaticProps() {
@@ -15,8 +15,9 @@ export async function getStaticProps() {
   };
 }
 
-export default function Bloglist({ allPostsData }) {
+export default function Bloglist({allPostsData}) {
   return (
+    <>
     <Layout>
       <Head>
         <title>Blog list</title>
@@ -46,5 +47,6 @@ export default function Bloglist({ allPostsData }) {
         </ul>
       </section>
     </Layout>
+    </>
   );
 }
