@@ -1,7 +1,6 @@
 // https://portfolio-flax-three-97.vercel.app
 import Head from 'next/head';
 import Image from 'next/image';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import { Wrapper, Header, HomeButton } from './layout-styles.js';
 import { TagmanagerFunction, TagmanagerIframe } from './analytics';
@@ -32,7 +31,7 @@ export default function Layout({ children, home }) {
       <TagmanagerIframe />
       <Header>
           <>
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1>{name}</h1>
           </>
       </Header>
       <main>{children}</main>
