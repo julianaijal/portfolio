@@ -2,15 +2,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Wrapper, Header, HomeButton } from './layout-styles.js';
 import Schema from '../utility/schema.js'
+import styles from './layout.module.css';
 
 const name = 'Julian Aijal';
 export const siteTitle = name;
 
 export default function Layout({ children, home }) {
   return (
-    <Wrapper>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="...jpg" />
         <Schema/>
@@ -29,20 +29,19 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         
       </Head>
-      
-      <Header>
+      <header className={styles.header}>
           <>
             <h1>{name}</h1>
           </>
-      </Header>
+      </header>
       <main>{children}</main>
       {!home && (
-        <HomeButton>
+        <div className='backToHome'>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
-        </HomeButton>
+        </div>
       )}
-    </Wrapper>
+    </div>
   );
 }
