@@ -1,4 +1,7 @@
 import styled from "styled-components"
+// change styled. to tw. work with tailwind components
+import tw from "tailwind-styled-components"
+
 
 export const Wrapper = styled.div`
   max-width: 36rem;
