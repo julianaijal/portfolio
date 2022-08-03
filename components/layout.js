@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Wrapper, Header, HomeButton } from './layout-styles.js';
-import { TagmanagerFunction, TagmanagerIframe } from './analytics';
+import { TagmanagerFunction, TagmanagerIframe } from '../utility/analytics';
 
 const name = 'Julian Aijal';
 export const siteTitle = 'Next.js Sample Website';
