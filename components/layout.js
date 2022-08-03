@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Wrapper, Header, HomeButton } from './layout-styles.js';
-import { TagmanagerFunction, TagmanagerIframe } from './analytics';
 
 const name = 'Julian Aijal';
 export const siteTitle = 'Next.js Sample Website';
@@ -26,9 +25,9 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <TagmanagerFunction/>
+        
       </Head>
-      <TagmanagerIframe />
+      
       <Header>
           <>
             <h1>{name}</h1>

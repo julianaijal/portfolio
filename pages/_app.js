@@ -1,6 +1,18 @@
 // https://portfolio-flax-three-97.vercel.app
 import '../styles/global.css';
+import { useEffect } from 'react'
+import analytics from '../utility/analytics'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    analytics.page() 
+  }, [])
+
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  )
 }
+
+export default MyApp
