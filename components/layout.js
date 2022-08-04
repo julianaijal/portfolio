@@ -6,7 +6,7 @@ import { Wrapper, Header, HomeButton } from './layout-styles.js';
 import Schema from '../utility/schema.js'
 
 const name = 'Julian Aijal';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = name;
 
 export default function Layout({ children, home }) {
   return (
@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
         <Schema/>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Hallo met mij"
         />
         {/* <meta name="robots" content="noindex"></meta> */}
         <meta
