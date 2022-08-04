@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Wrapper, Header, HomeButton } from './layout-styles.js';
+import Schema from '../utility/schema.js'
 
 const name = 'Julian Aijal';
 export const siteTitle = 'Next.js Sample Website';
@@ -12,6 +13,7 @@ export default function Layout({ children, home }) {
     <Wrapper>
       <Head>
         <link rel="icon" href="...jpg" />
+        <Schema/>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
