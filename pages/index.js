@@ -19,8 +19,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section>
         <p className='text-center'>
-          (This is a sample website on{' '}
-          <a href="https://nextjs.org/learn">Next.js</a>.)
+         Hallo met mij
         </p>
       </section>
     </Layout>
