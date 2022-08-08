@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
         
       </Head>
       <header className={styles.header}>
-        <h1>{name}</h1>
+        <h1 className='text-white'>{name}</h1>
         <ul className="flex">
           <li className="mr-6">
             <a className="text-white hover:text-blue-800" rel="noopener" href="https://www.linkedin.com/in/jaijal/">
