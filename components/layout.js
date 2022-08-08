@@ -45,6 +45,9 @@ export default function Layout({ children, home }) {
         </ul>
       </header>
       <main>{children}</main>
+      <footer className={styles.footer}>  
+        <p>Developed by Julian Aijal</p>
+      </footer>
     </div>
   );
 }
