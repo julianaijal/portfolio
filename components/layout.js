@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
         
       </Head>
       <header className={styles.header}>
-        <ul className="flex">
+        <ul className="flex float-right">
           <li className="mr-6">
             <a className="text-white hover:text-blue-800" href="#">Link</a>
           </li>
