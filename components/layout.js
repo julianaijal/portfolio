@@ -33,13 +33,14 @@ export default function Layout({ children, home }) {
         <h1>{name}</h1>
         <ul className="flex">
           <li className="mr-6">
-            <a className="text-white hover:text-blue-800" href="#">Link</a>
+            <a className="text-white hover:text-blue-800" rel="noopener" href="https://www.linkedin.com/in/jaijal/">
+              <Image alt='linkedin' src="/linkedin-black.svg" height={32} width={32}/>    
+            </a>
           </li>
           <li className="mr-6">
-            <a className="text-white hover:text-blue-800" href="#">Link</a>
-          </li>
-          <li className="mr-6">
-            <a className="text-white hover:text-blue-800" href="#">Link</a>
+          <a className="text-white hover:text-blue-800" rel="noopener" href="https://github.com/julianaijal">
+            <Image alt='linkedin' src="/github-black.svg" height={32} width={32}/>
+          </a>
           </li>
         </ul>
       </header>
