@@ -3,8 +3,11 @@
   }
   
   .header {
-@apply flex;
-justify-content: space-between;
+    @apply flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    max-width: 65rem;
+    padding: 0 1rem;
   }
   
   .backToHome {
