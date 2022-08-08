@@ -1,16 +1,14 @@
-// https://portfolio-flax-three-97.vercel.app
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Wrapper, Header, HomeButton } from './layout-styles.js';
 import Schema from '../utility/schema.js'
+import styles from './layout.module.css';
 
 const name = 'Julian Aijal';
 export const siteTitle = name;
 
 export default function Layout({ children, home }) {
   return (
-    <Wrapper>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="...jpg" />
         <Schema/>
@@ -29,20 +27,25 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         
       </Head>
-      
-      <Header>
-          <>
-            <h1>{name}</h1>
-          </>
-      </Header>
+      <header className={styles.header}>
+        <h1 className='text-white'>{name}</h1>
+        <ul className="flex">
+          <li className="mr-6">
+            <a className="text-white hover:text-blue-800" rel="noopener" href="https://www.linkedin.com/in/jaijal/">
+              <Image alt='linkedin' src="/linkedin-black.svg" height={32} width={32}/>    
+            </a>
+          </li>
+          <li className="mr-6">
+          <a className="text-white hover:text-blue-800" rel="noopener" href="https://github.com/julianaijal">
+            <Image alt='linkedin' src="/github-black.svg" height={32} width={32}/>
+          </a>
+          </li>
+        </ul>
+      </header>
       <main>{children}</main>
-      {!home && (
-        <HomeButton>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </HomeButton>
-      )}
-    </Wrapper>
+      <footer className={styles.footer}>  
+        <p className='text-white text-xs'>Developed by Julian Aijal</p>
+      </footer>
+    </div>
   );
 }
