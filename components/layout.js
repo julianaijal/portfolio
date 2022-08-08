@@ -46,7 +46,7 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       <footer className={styles.footer}>  
-        <p>Developed by Julian Aijal</p>
+        <p className='text-white text-xs'>Developed by Julian Aijal</p>
       </footer>
     </div>
   );
