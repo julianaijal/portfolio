@@ -1,7 +1,5 @@
-// https://portfolio-flax-three-97.vercel.app
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 import Schema from '../utility/schema.js'
 import styles from './layout.module.css';
 
