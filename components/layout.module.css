@@ -7,10 +7,8 @@
   }
   
   .footer {
-    bottom: 0;
     padding: 1rem 0;
-    position: fixed;
+    position: absolute;
     text-align: center;
     width: 100%;
-    @apply bg-slate-500;
   }
