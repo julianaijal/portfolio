@@ -3,7 +3,8 @@
   }
   
   .header {
-
+@apply flex;
+justify-content: space-between;
   }
   
   .backToHome {
