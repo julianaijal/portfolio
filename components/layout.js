@@ -32,12 +32,12 @@ export default function Layout({ children, home }) {
         <ul className="flex">
           <li className="mr-6">
             <a className="text-white hover:text-blue-800" rel="noopener" href="https://www.linkedin.com/in/jaijal/">
-              <Image alt='linkedin' src="/linkedin.svg" height={32} width={32}/>    
+              <Image alt='linkedin' src="/linkedin.svg" height={42} width={42}/>    
             </a>
           </li>
           <li className="mr-6">
           <a className="text-white hover:text-blue-800" rel="noopener" href="https://github.com/julianaijal">
-            <Image alt='linkedin' src="/github-black.svg" height={32} width={32}/>
+            <Image alt='linkedin' src="/github.svg" height={42} width={42}/>
           </a>
           </li>
         </ul>
