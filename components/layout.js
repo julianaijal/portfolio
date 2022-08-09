@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
         <ul className="flex">
           <li className="mr-6">
             <a className="text-white hover:text-blue-800" rel="noopener" href="https://www.linkedin.com/in/jaijal/">
-              <Image alt='linkedin' src="/linkedin-black.svg" height={32} width={32}/>    
+              <Image alt='linkedin' src="/linkedin.svg" height={32} width={32}/>    
             </a>
           </li>
           <li className="mr-6">
