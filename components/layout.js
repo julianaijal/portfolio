@@ -30,15 +30,20 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         <h1 className='text-white'>{name}</h1>
         <ul className="flex">
+        <li className="mr-6">
+            <a className="text-white hover:text-blue-800" rel="noopener" href="https://github.com/julianaijal">
+              <Image alt='linkedin' src="/github.svg" height={42} width={42}/>
+            </a>
+          </li>
+          <li className="mr-6">
+            <a className="text-white hover:text-blue-800" rel="noopener" href="https://twitter.com/Jaijal">
+              <Image alt='twitter' src="/twitter.svg" height={42} width={42}/>    
+            </a>
+          </li>
           <li className="mr-6">
             <a className="text-white hover:text-blue-800" rel="noopener" href="https://www.linkedin.com/in/jaijal/">
               <Image alt='linkedin' src="/linkedin.svg" height={42} width={42}/>    
             </a>
-          </li>
-          <li className="mr-6">
-          <a className="text-white hover:text-blue-800" rel="noopener" href="https://github.com/julianaijal">
-            <Image alt='linkedin' src="/github.svg" height={42} width={42}/>
-          </a>
           </li>
         </ul>
       </header>
