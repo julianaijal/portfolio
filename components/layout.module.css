@@ -7,7 +7,7 @@
     padding: 0 1rem;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    @apply border-indigo-500;
+    border-color: #F64C72;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     margin-right: auto;
@@ -18,11 +18,12 @@
     border-top-style: solid;
     border-top-width: 1px;
     max-width: 65rem;
+    margin-top: 3rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     width: 100%;
-    @apply border-indigo-500;
+    border-color: #F64C72;
   }
