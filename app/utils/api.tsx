@@ -1,6 +1,6 @@
+"use server";
 const fetchPosts = async () => {
   const api = `https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/${process.env.HYGRAPH_API_KEY}/master`;
-
   try {
     const response = await fetch(api, {
       method: "POST",
@@ -14,6 +14,7 @@ const fetchPosts = async () => {
           }
         }`,
       }),
+      next: { tags: ["external-articles-collection"] },
     });
 
     if (!response.ok) {
